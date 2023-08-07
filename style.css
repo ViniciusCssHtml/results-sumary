@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Hanken Grotesk";
+}
+
+section {
+  max-width: 1000px;
+  padding-top: 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.result-container {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  background-image: linear-gradient(#7756ff, #302ce9);
+  gap: 20px;
+  border-radius: 20px 0px 0px 20px;
+  padding: 40px;
+  
+}
+
+.result-span {
+  color: #c8c3ff;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.result-number-container {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-image: linear-gradient(#4e21ca, #4b3bf1);
+  display: grid;
+  align-items: center;
+  align-content: center;
+}
+
+.result-number-container h1 {
+  color: #fff;
+  font-size: 4rem;
+}
+.result-number-container span {
+  color: #c8c3ff;
+}
+
+h2 {
+  color: #fff;
+  font-size: 2rem;
+}
+p {
+  color: #c8c3ff;
+}
+
+.sumary-container {
+  display: grid;
+  justify-content: center;
+  padding: 40px;
+  gap: 20px;
+  box-shadow: 5px 3px 20px 2px rgba(0, 0, 0, 0.164);
+  border-radius: 0px 20px 20px 0px;
+}
+.sumary-title{
+  color: #304a7a;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.sumary-container ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.sumary-container ul li div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.reaction-bg{
+  background-color: #f7c1c138;
+  color: red;
+}
+.memory-bg{
+  background-color: #f7f6c138;
+  color: #FECA64;
+}
+.verbal-bg{
+  background-color: #c1f7de38;
+  color: #60d5b9;
+}
+.visual-bg{
+  background-color: #c1c9f744;
+  color: #2F40DB;
+}
+
+.sumary-container ul li h3 {
+ font-size: 1rem;
+}
+
+a{
+  background-color: #304A7A;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+a:hover{
+  background-image: linear-gradient(#4e21ca, #4b3bf1);
+  
+}
+
+@media(max-width:720px){
+  section{
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .result-container{
+    border-radius: 20px 20px 0px 0px;
+  }
+  .sumary-container{
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+  }
+}
